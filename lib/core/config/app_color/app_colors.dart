@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppColor {
-  static const primary = Color(0xff108a00);
+  static const primary = Color(0xff8CD6F7);
   static const lightBackground = Color(0xfff2f2f2);
   static const darkBackground = Color(0xff0d0c0c);
   static const greyColor = Color(0xffBEBEBE);
@@ -23,4 +23,11 @@ class AppColor {
   static const redAccentColor = Color(0xFFFF5252);
   static const greenColorShade100 = Color(0xFFC8E6C9);
   static const greyColorShade = Color(0xff808080);
+  // ! new app colors
+  static const firstContainerColor = Color(0xff8CD6F7);
+  static const secondContainerColor = Color(0xff7A9EAE);
+  static const greyTextShade = Color(0xff515151);
+  static const textFormFieldColor = Color(0xffF2F2F2);
+  static const linearStart = Color(0xff8EDDFF);
+  static const linearEnd = Color(0xff769DAD);
 }

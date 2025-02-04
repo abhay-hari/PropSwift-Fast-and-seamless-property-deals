@@ -1,7 +1,7 @@
-import 'package:clean_archtecture_template_abhay/core/utils/responsive_size/rsp_textstyle.dart';
-import 'package:clean_archtecture_template_abhay/features/widgets/text/custom_text.dart';
-import 'package:clean_archtecture_template_abhay/features/widgets/text/subtitle_text.dart';
-import 'package:clean_archtecture_template_abhay/features/widgets/text/title_text.dart';
+import 'package:propswift/core/utils/responsive_size/rsp_textstyle.dart';
+import 'package:propswift/features/widgets/text/custom_text.dart';
+import 'package:propswift/features/widgets/text/subtitle_text.dart';
+import 'package:propswift/features/widgets/text/title_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:io';
@@ -36,7 +36,7 @@ class PlatformAlertBox extends StatelessWidget {
                 Navigator.pop(context);
               },
               child: CustomText(
-                text: secondButtonText,
+                text: 'cancel',
                 fontsize: 12,
                 textColor: FontColor.blackColor,
                 fontWeight: FontWeight.w500,
@@ -45,7 +45,7 @@ class PlatformAlertBox extends StatelessWidget {
           CupertinoDialogAction(
             onPressed: onConfirm,
             child: CustomText(
-              text: "Cancel",
+              text: secondButtonText,
               fontsize: 12,
               textColor: FontColor.blueAccentColor,
               fontWeight: FontWeight.w500,
@@ -63,7 +63,7 @@ class PlatformAlertBox extends StatelessWidget {
               onPressed: onConfirm,
               child: CustomText(
                 text: secondButtonText,
-                fontsize: 12,
+                fontsize: 14,
                 textColor: FontColor.blackColor,
                 fontWeight: FontWeight.w500,
               ),
@@ -87,12 +87,13 @@ class PlatformAlertBox extends StatelessWidget {
 
 //! usage
 // /*
-void showPlatformAlert({
-  required BuildContext context,
-  required String title,
-  required String content,
-  Function()? function,
-}) {
+void showPlatformAlert(
+    {required BuildContext context,
+    required String title,
+    required String content,
+    required String secondButtonName,
+    Function()? function,
+    required bool isTwoButtonNeed}) {
   showDialog(
     context: context,
     builder: (BuildContext context) {
@@ -100,8 +101,8 @@ void showPlatformAlert({
         title: title,
         content: content,
         onConfirm: function ?? () {},
-        isNeedTwoButton: false,
-        secondButtonText: '',
+        isNeedTwoButton: isTwoButtonNeed,
+        secondButtonText: secondButtonName,
       );
     },
   );

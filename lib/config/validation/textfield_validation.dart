@@ -10,6 +10,26 @@ class TextFormFieldValidation {
     return "";
   }
 
+  static String amountValidation({required String value}) {
+    if (value == null || value.isEmpty) {
+      return 'Amount is required';
+    }
+    final number = double.tryParse(value);
+    if (number == null) {
+      return 'Enter a valid number';
+    }
+    if (number <= 0) {
+      return 'Amount must be greater than zero';
+    }
+    // if (number > 1000000) {
+    //   return 'Amount cannot exceed 1,000,000';
+    // }
+    if (value.contains('.') && value.split('.')[1].length > 2) {
+      return 'Only two decimal places allowed';
+    }
+    return ""; // Valid input
+  }
+
   static String ageValidationWithoutReturnMessages({required String value}) {
     if (value.isEmpty) {
       return '';

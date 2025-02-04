@@ -1,4 +1,4 @@
-import 'package:clean_archtecture_template_abhay/domain/entities/dio_exception_contend.dart';
+import 'package:propswift/domain/entities/dio_exception_contend.dart';
 import 'package:dio/dio.dart';
 
 class ApiExceptions {

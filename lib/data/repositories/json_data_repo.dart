@@ -1,5 +1,5 @@
-import 'package:clean_archtecture_template_abhay/data/source/api_data_source/json_data_source.dart';
-import 'package:clean_archtecture_template_abhay/domain/repositories/json_domain_repo.dart';
+import 'package:propswift/data/source/api_data_source/json_data_source.dart';
+import 'package:propswift/domain/repositories/json_domain_repo.dart';
 import 'package:flutter/material.dart';
 
 class JsonDataRepo extends JsonDomainRepo {

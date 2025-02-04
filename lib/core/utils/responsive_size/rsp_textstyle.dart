@@ -1,16 +1,20 @@
-import 'package:clean_archtecture_template_abhay/core/config/app_color/app_colors.dart';
-import 'package:clean_archtecture_template_abhay/core/utils/responsive_size/responsive_screen.dart';
+import 'package:propswift/core/config/app_color/app_colors.dart';
+import 'package:propswift/core/utils/responsive_size/responsive_screen.dart';
 import 'package:flutter/material.dart';
 
 class UiUtils {
   static TextStyle textStyleFont(BuildContext context,
-      {FontColor? fc, FontWeight? fw, double? fz, TextDecoration? closeText}) {
+      {FontColor? fc,
+      FontWeight? fw,
+      double? fz,
+      TextDecoration? closeText,
+      String? fontFamily}) {
     return TextStyle(
-      fontSize: fz ?? fontSize.fourteen.value.rf(context),
-      fontWeight: fw ?? FontWeight.w500,
-      color: fc?.color ?? AppColor.blackColor,
-      decoration: closeText ?? TextDecoration.none,
-    );
+        fontSize: fz ?? fontSize.fourteen.value.rf(context),
+        fontWeight: fw ?? FontWeight.w500,
+        color: fc?.color ?? AppColor.blackColor,
+        decoration: closeText ?? TextDecoration.none,
+        fontFamily: fontFamily ?? 'Roboto');
   }
 }
 
@@ -31,6 +35,7 @@ enum FontColor {
   chineseBlackColor,
   redAccentColor,
   greyColorShade,
+  greyTextShade
 }
 
 extension FontColorExtension on FontColor {
@@ -68,6 +73,8 @@ extension FontColorExtension on FontColor {
         return AppColor.blueAccentColor;
       case FontColor.greyColorShade:
         return AppColor.greyColorShade;
+      case FontColor.greyTextShade:
+        return AppColor.greyTextShade;
     }
   }
 }

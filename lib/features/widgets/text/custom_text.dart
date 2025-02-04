@@ -1,9 +1,10 @@
-import 'package:clean_archtecture_template_abhay/core/utils/responsive_size/responsive_screen.dart';
-import 'package:clean_archtecture_template_abhay/core/utils/responsive_size/rsp_textstyle.dart';
+import 'package:propswift/core/utils/responsive_size/responsive_screen.dart';
+import 'package:propswift/core/utils/responsive_size/rsp_textstyle.dart';
 import 'package:flutter/material.dart';
 
 class CustomText extends StatelessWidget {
   final String text;
+  String? fontFamily;
   TextAlign? textAlign;
   TextDecoration? lineThroughText;
   final double fontsize;
@@ -12,6 +13,7 @@ class CustomText extends StatelessWidget {
   CustomText({
     super.key,
     TextAlign? textAlign,
+    String? fontFamily,
     TextDecoration? closeText,
     required this.text,
     required this.fontsize,
@@ -28,33 +30,8 @@ class CustomText extends StatelessWidget {
           fz: fontsize.rf(context),
           fc: textColor,
           fw: fontWeight,
-          closeText: lineThroughText),
-
-      // TextStyle(
-      //     color: Color(textColor),
-      //     fontSize: fontsize,
-      //     fontWeight: fontWeight)
+          closeText: lineThroughText,
+          fontFamily: fontFamily),
     );
-    //   Text(
-    //     text: value,
-    //   textAlign: textAlign,
-    //   style: TextStyle(
-    //       color: Color(textColor), fontSize: fontsize, fontWeight: FontWeight), ,
-    // );
   }
 }
-
-// Widget text({
-//   TextAlign? textAlign,
-//   required String text,
-//   required double fontsize,
-//   required int textColor,
-//   required FontWeight FontWeight,
-// }) {
-//   return Text(
-//     text,
-//     textAlign: textAlign,
-//     style: TextStyle(
-//         color: Color(textColor), fontSize: fontsize, fontWeight: FontWeight),
-//   );
-// }

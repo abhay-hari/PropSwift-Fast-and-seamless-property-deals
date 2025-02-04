@@ -1,6 +1,6 @@
 // ignore_for_file: overridden_fields
 
-import 'package:clean_archtecture_template_abhay/domain/entities/json_enities.dart';
+import 'package:propswift/domain/entities/json_enities.dart';
 
 class JsonModel extends JsonEnities {
   final int userId;

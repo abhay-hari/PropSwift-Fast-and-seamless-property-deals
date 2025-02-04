@@ -1,6 +1,6 @@
-import 'package:clean_archtecture_template_abhay/config/const_values/const_values.dart';
-import 'package:clean_archtecture_template_abhay/core/utils/api/dio_functions.dart';
-import 'package:clean_archtecture_template_abhay/data/model/json_model.dart';
+import 'package:propswift/config/const_values/const_values.dart';
+import 'package:propswift/core/utils/api/dio_functions.dart';
+import 'package:propswift/data/model/json_model.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 

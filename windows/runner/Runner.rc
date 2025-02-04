@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "clean_archtecture_template_abhay" "\0"
+            VALUE "FileDescription", "propswift" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "clean_archtecture_template_abhay" "\0"
+            VALUE "InternalName", "propswift" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "clean_archtecture_template_abhay.exe" "\0"
-            VALUE "ProductName", "clean_archtecture_template_abhay" "\0"
+            VALUE "OriginalFilename", "propswift.exe" "\0"
+            VALUE "ProductName", "propswift" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

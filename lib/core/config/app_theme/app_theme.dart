@@ -1,4 +1,4 @@
-import 'package:clean_archtecture_template_abhay/core/config/app_color/app_colors.dart';
+import 'package:propswift/core/config/app_color/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
